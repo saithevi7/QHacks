@@ -1,0 +1,134 @@
+[
+  {
+    "Age": "16-19",
+    "Income": "0-15000",
+    "Employment": "unemployed",
+    "Monthly Housing Exp": "0-400",
+    "Transport Exp": "0-100",
+    "Food Exp": "0-100",
+    "Entertain Exp": "0-100",
+    "Debt": 0,
+    "Credit Score": "630-689"
+  },
+  {
+    "Age": "20-25",
+    "Income": "15000-24999",
+    "Employment": "employed",
+    "Monthly Housing Exp": "600-900",
+    "Transport Exp": "100-200",
+    "Food Exp": "100-200",
+    "Entertain Exp": "100-200",
+    "Debt": "500-1500",
+    "Credit Score": 0
+  },
+  {
+    "Age": "25-30",
+    "Income": "25000-34999",
+    "Employment": "unemployed",
+    "Monthly Housing Exp": "1200-1500",
+    "Transport Exp": "200-300",
+    "Food Exp": "200-300",
+    "Entertain Exp": "200-300",
+    "Debt": "500-1500",
+    "Credit Score": "300-629"
+  },
+  {
+    "Age": "30-45",
+    "Income": "35000-49999",
+    "Employment": "retired",
+    "Monthly Housing Exp": "400-600",
+    "Transport Exp": "300+",
+    "Food Exp": "300+",
+    "Entertain Exp": "300+",
+    "Debt": "5000-15000",
+    "Credit Score": "690-719"
+  },
+  {
+    "Age": "45-65",
+    "Income": "50000-74999",
+    "Employment": "unemployed",
+    "Monthly Housing Exp": "2000-3000",
+    "Transport Exp": "0-100",
+    "Food Exp": "100-200",
+    "Entertain Exp": "0-100",
+    "Debt": "15000-35000",
+    "Credit Score": "720-850"
+  },
+  {
+    "Age": "65+",
+    "Income": "50000-74999",
+    "Employment": "unemployed",
+    "Monthly Housing Exp": "3000-5000",
+    "Transport Exp": "0-100",
+    "Food Exp": "100-200",
+    "Entertain Exp": "0-100",
+    "Debt": "1500-5000",
+    "Credit Score": "630-689"
+  },
+  {
+    "Age": "16-19",
+    "Income": "100000-150000",
+    "Employment": "unemployed",
+    "Monthly Housing Exp": "900-1200",
+    "Transport Exp": "0-100",
+    "Food Exp": "100-200",
+    "Entertain Exp": "0-100",
+    "Debt": "35000-55000",
+    "Credit Score": "630-689"
+  },
+  {
+    "Age": "20-25",
+    "Income": "350000-500000",
+    "Employment": "unemployed",
+    "Monthly Housing Exp": "3000-5000",
+    "Transport Exp": "0-100",
+    "Food Exp": "100-200",
+    "Entertain Exp": "0-100",
+    "Debt": "55000-75000",
+    "Credit Score": "630-689"
+  },
+  {
+    "Age": "25-30",
+    "Income": "150000-350000",
+    "Employment": "unemployed",
+    "Monthly Housing Exp": "1500-2000",
+    "Transport Exp": "0-100",
+    "Food Exp": "100-200",
+    "Entertain Exp": "0-100",
+    "Debt": 0,
+    "Credit Score": "630-689"
+  },
+  {
+    "Age": "30-45",
+    "Income": "75000-99999",
+    "Employment": "unemployed",
+    "Monthly Housing Exp": "0-400",
+    "Transport Exp": "0-100",
+    "Food Exp": "100-200",
+    "Entertain Exp": "0-100",
+    "Debt": 0,
+    "Credit Score": "630-689"
+  },
+  {
+    "Age": "45-65",
+    "Income": "50000-74999",
+    "Employment": "unemployed",
+    "Monthly Housing Exp": "0-400",
+    "Transport Exp": "0-100",
+    "Food Exp": "100-200",
+    "Entertain Exp": "0-100",
+    "Debt": 0,
+    "Credit Score": "630-689"
+  },
+  {
+    "Age": "65+",
+    "Income": "50000-74999",
+    "Employment": "unemployed",
+    "Monthly Housing Exp": "0-400",
+    "Transport Exp": "0-100",
+    "Food Exp": "100-200",
+    "Entertain Exp": "0-100",
+    "Debt": 0,
+    "Credit Score": "630-689"
+  }
+]
