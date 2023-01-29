@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>balances</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="balances.css">
+    <script src="https://kit.fontawesome.com/9307b0a2de.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="../Banking After Access/home.html" id="navbar__logo"><i class="fas fa-gem"></i> BALANCES</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="../Banking After Access/home.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../Banking After Access/transfers.html" class="navbar__links">
+                        Transfers
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../Banking After Access/balances.html" class="navbar__links">
+                        Balances
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="../Banking After Access/profile.html" class="button">
+                        Profile
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <py-script>
+                    class BudgetAccount:
+                    def __init__(self, food_budget, entertainment_budget):
+                        self.balance = 0
+                        self.food_budget = food_budget
+                        self.entertainment_budget = entertainment_budget
+                
+                    def check_balance(self):
+                        return self.balance
+                
+                    def track_expense(self, expense_type, amount):
+                        if expense_type == "food":
+                            if self.balance - amount < -self.food_budget:
+                                return "Budget exceeded for food expenses"
+                            self.balance -= amount
+                        elif expense_type == "entertainment":
+                            if self.balance - amount < -self.entertainment_budget:
+                                return "Budget exceeded for entertainment expenses"
+                            self.balance -= amount
+                        else:
+                            return "Invalid expense type"
+                
+                user1_budget = BudgetAccount(food_budget=500, entertainment_budget=200)
+                user2_budget = BudgetAccount(food_budget=300, entertainment_budget=100)
+                
+                print(user1_budget.check_balance()) # prints 0
+                print(user2_budget.check_balance()) # prints 0
+                
+                user1_budget.track_expense("food", 100)
+                print(user1_budget.check_balance()) # prints -100
+                
+                user2_budget.track_expense("entertainment", 50)
+                print(user2_budget.check_balance()) # prints -50
+                </py-script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="app.js"></script>
+</body>
+</html>

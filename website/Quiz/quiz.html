@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <script src="https://kit.fontawesome.com/9307b0a2de.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+        <title>balances</title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+    
+    <body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="../Banking After Access/home.html" id="navbar__logo"><i class="fas fa-gem"></i> SURVEY </a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="../Banking After Access/home.html" class="navbar__links">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="../Banking After Access/transfers.html" class="navbar__links">
+                            Transfers
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="../Banking After Access/balances.html" class="navbar__links">
+                            Balances
+                        </a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="../Banking After Access/profile.html" class="button">
+                            Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Background an Quiz -->
+        <div class="Heading">
+            <div class="main__container">
+            <h1 id ="head"> 
+                &nbspSurvey Form
+            </h1>
+            <h2 id="subheading"> 
+                &nbspThis survey will help you determine your overall buddgeting <br></br>
+            </h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz -->
+        <form>
+            <div class="survey__questions">
+                <label id="Age">&nbsp What is your age?</label> <br><br>
+                &nbsp <input type="age" placeholder="Enter" class="box"> <br></br> <br></br>
+
+                <label id="Credit_Score">&nbsp What is your credit score?</label> <br><br>
+                &nbsp <input type="credit score" placeholder="Enter" class="box"> <br></br> <br></br>
+
+                <label id="Debt">&nbsp How much debt do you have? (credit card, loans, etc.)</label> <br><br>
+                &nbsp <input type="How much debt do you have" placeholder="Enter" class="box"> <br></br> <br></br>
+
+                <label id="Employment">&nbsp What is your current employment status? (employed, unemployed, self-employed, retired, etc.)</label> <br><br>
+                <div>
+                    &nbsp <select>
+                        <option name="Select">Select</option>
+                        <option value="Employed">Employed</option>
+                        <option value="Unemployed">Unemployed</option>
+                        <option value="Retired">Retired</option>
+                    </select>
+                </div>
+                
+                <br></br><br>
+
+                <label id="Food_Exp">&nbsp How much do you spend on food (groceries, eating out, etc.) each month?</label> <br><br>
+                &nbsp <input type="spend on food" placeholder="Enter" class="box"> <br></br> <br></br>
+                
+                <label id="Entertain_Exp">&nbsp How much do you spend on entertainment (movies, concerts, etc.) each month?</label> <br><br>
+                &nbsp<input type="spend on entertainment" placeholder="Enter" class="box"> <br></br> <br></br>
+
+                <label id="Income">&nbsp What is your annual income (before taxes)?</label> <br><br>
+                &nbsp <input type="annual income" placeholder="Enter" class="box"> <br></br><br></br>
+
+                <label id="Monthly_Housing_Exp">&nbsp How much do you spend on housing expenses (rent/mortgage, utilities, etc.) each month?</label> <br><br>
+                &nbsp <input type="housing expenses" placeholder="Enter" class="box"> <br></br> <br></br>
+
+                <label id="Transport_Exp">&nbsp How much do you spend on transportation (car payment, gas, public transportation, etc.) each month?</label> <br><br>
+                &nbsp <input type="spend on transportation" placeholder="Enter" class="box"> <br></br> <br></br>
+
+                &nbsp <button onclick="getUserData()">Submit</button>
+                
+                <br></br>
+            </div>
+        </form>
+    </body>
+    
+    <script type="module" src="../Quiz/quiz.js"></script>
+    
+    <script>
+
+        async function getUserData () {
+            Age = document.getElementById('Age').value;
+            Credit_Score = document.getElementById('Credit_Score').value;
+            Debt = document.getElementById('Debt').value;
+            Employment = document.getElementById('Employment').value;
+            Food_Exp = document.getElementById('Food_Exp').value;
+            Entertain_Exp = document.getElementById('Entertain_Exp').value;
+            Income = document.getElementById('Income').value;
+            Monthly_Housing_Exp = document.getElementById('Monthly_Housing_Exp').value;
+            Transport_Exp = document.getElementById('Transport_Exp').value;
+
+            if (!Age, !Credit_Score, !Debt, !Employment, !Food_Exp,
+            !Entertain_Exp, !Income, Monthly_Housing_Exp) {
+
+            }
+        }
+
+    </script>
+
+</html>
