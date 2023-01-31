@@ -36,10 +36,15 @@ my_budget = BudgetAccount()
 print(my_budget.check_balance())
 print(my_budget.track_expense("food", 200))
 
+data = {"Outputs": {"0": 1.0, "1": 184.27, "2": 1419.05, "3": 123.46}}
 with open("C:/Users/William/Documents/GitHub/QHacks/backEnd/USER DATA OUT.json", "w") as file:
-    json.dump({"balance": my_budget.balance, "food_budget": my_budget.food_budget, "entertainment_budget": my_budget.entertainment_budget, "savings_budget": my_budget.savings_budget}, file)
+    json.dump(data, file)
 
-print("balance:", my_budget.balance)
-print("Recommended food budget:", my_budget.food_budget)
-print("Recommended entertainment budget:", my_budget.entertainment_budget)
-print("Recommended savings budget:", my_budget.savings_budget)
+with open("C:/Users/William/Documents/GitHub/QHacks/backEnd/USER DATA OUT.json", "r") as file:
+    data = json.load(file)
+
+print("balance:", data["Outputs"]["0"])
+print("Recommended food budget:", data["Outputs"]["1"])
+print("Recommended entertainment budget:", data["Outputs"]["2"])
+print("Recommended savings budget:", data["Outputs"]["3"])
+
