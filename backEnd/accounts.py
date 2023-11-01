@@ -26,7 +26,25 @@ def check_budget():
     if food_budget <= 100 or entertainment_budget <= 100:
         send_notification("Low balance alert. Please check your budget.")
 
+# Create a function to send notifications (example using email)
+def send_notification(message):
+    import smtplib
+    from email.mime.text import MIMEText
 
+    sender_email = "sender@email.com"
+    receiver_email = "receiver@email.com"
+    password = "password"
+
+    msg = MIMEText(message)
+    msg['Subject'] = "Budget Alert"
+    msg['From'] = sender_email
+    msg['To'] = receiver_email
+
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(sender_email, password)
+    server.sendmail(sender_email, receiver_email, msg.as_string())
+    server.quit()
 
 # Main function
 def main():

@@ -6,8 +6,8 @@ import pandas as pd
 import sklearn
 
 # Import data
-data = pd.read_json("C:/Users/luisd/OneDrive/Documents/GitHub/QHacks/backEnd/DATASET.json")
-user_data_in = pd.read_json("C:/Users/luisd/OneDrive/Documents/GitHub/QHacks/backEnd/USER DATA IN.json")
+data = pd.read_json("C:/Users/luisd/OneDrive/Documents/GitHub/QHacks-2023/backEnd/DATASET.json")
+user_data_in = pd.read_json("C:/Users/luisd/OneDrive/Documents/GitHub/QHacks-2023/backEnd/USER DATA IN.json")
 
 # Import models
 from sklearn.ensemble import RandomForestClassifier
@@ -60,7 +60,7 @@ regression_out = model_regression.predict(X_user_enc.tail(1))
 out_array = np.append(classification_out, regression_out)
 user_data_out = pd.DataFrame(data=out_array)
 user_data_out.columns = ["Outputs"]
-user_data_out.to_json("C:/Users/luisd/OneDrive/Documents/GitHub/QHacks/backEnd/USER DATA OUT.json")
+user_data_out.to_json("C:/Users/luisd/OneDrive/Documents/GitHub/QHacks-2023/backEnd/USER DATA OUT.json")
 
 
 # Produce graphs to display current spending vs recommended budgeting
@@ -76,7 +76,7 @@ food_graph = plt.bar(["Average Current Monthly \nFood Expenditure","Recommended 
 plt.ylabel("Dollars ($)")
 plt.title("Current Monthly Food Expenditure vs \nRecommended Monthly Food Budget")
 
-plt.savefig("C:/Users/luisd/OneDrive/Documents/GitHub/QHacks/backEnd/Food Graph.png")
+plt.savefig("C:/Users/luisd/OneDrive/Documents/GitHub/QHacks-2023/backEnd/Food Graph.png")
 
 # Clear the current figure
 plt.clf()
@@ -91,4 +91,4 @@ entertain_graph = plt.bar(["Average Current Monthly \nEntertainment Expenditure"
 plt.ylabel("Dollars ($)")
 plt.title("Current Monthly Entertainment Expenditure vs \nRecommended Monthly Entertainment Budget")
 
-plt.savefig("C:/Users/luisd/OneDrive/Documents/GitHub/QHacks/backEnd/Entertainment Graph.png")
+plt.savefig("C:/Users/luisd/OneDrive/Documents/GitHub/QHacks-2023/backEnd/Entertainment Graph.png")

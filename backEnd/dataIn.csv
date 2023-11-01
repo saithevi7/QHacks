@@ -1,4 +1,4 @@
-Age,Income,Employment,Monthly Housing Exp,Transport Exp,Food Exp,Entertain Exp,Debt,Credit Score
+Age,Income,Employment,Monthly_Housing_Exp,Transport_Exp,Food_Exp,Entertain_Exp,Debt,Credit_Score
 16-19,0-15000,unemployed,0-400,0-100,0-100,0-100,0,630-689
 20-25,15000-24999,employed,600-900,100-200,100-200,100-200,500-1500,0
 25-30,25000-34999,unemployed,1200-1500,200-300,200-300,200-300,500-1500,300-629

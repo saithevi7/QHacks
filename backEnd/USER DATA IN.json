@@ -130,16 +130,5 @@
     "Entertain Exp": "0-100",
     "Debt": 0,
     "Credit Score": "630-689"
-  },
-  {
-    "Age": "30-45",
-    "Income": "50000-74999",
-    "Employment": "employed",
-    "Monthly Housing Exp": "2000-3000",
-    "Transport Exp": "0-100",
-    "Food Exp": "100-200",
-    "Entertain Exp": "100-200",
-    "Debt": "5000-15000",
-    "Credit Score": "690-719"
   }
 ]
