@@ -231,6 +231,7 @@
 	background-color: #ff8177;
 	background-image: linear-gradient(to top, #b12a5b 50%, #ffb199 100%);
 	background-size: 100%;
+	text-align: center;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -241,11 +242,14 @@
 	background-color: #ff8177;
 	background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
 	background-size: 100%;
+	text-align: center;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-moz-text-fill-color: transparent;
 }
+
+
 
 .main__btn {
 	font-size: 1rem;
